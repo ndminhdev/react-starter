@@ -4,8 +4,13 @@ module.exports = {
     browser: true,
     es6: true
   },
+  rules: {
+    'prettier/prettier': 'error'
+  },
   extends: [
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'prettier'
   ],
   globals: {
     Atomics: 'readonly',

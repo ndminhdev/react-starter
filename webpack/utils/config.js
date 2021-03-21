@@ -14,7 +14,6 @@ exports.devServer = {
   historyApiFallback: true,
   compress: true,
   hot: true,
-  open: true,
   overlay: true
 };
 
