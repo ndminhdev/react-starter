@@ -16,7 +16,7 @@ module.exports = {
   output: {
     path: paths.build,
     publicPath: './',
-    filename: isDev ? '[name].[fullhash].js' : '[name].[contentash].js'
+    filename: isDev ? '[name].[fullhash].js' : '[name].[contenthash].js'
   },
   module: {
     rules: [
@@ -33,7 +33,8 @@ module.exports = {
     plugins.htmlPlugin,
     plugins.definePlugin,
     plugins.esLintPlugin,
-    plugins.copyPlugin
+    // Turn on next line if you want to use CopyWebpackPlugin
+    // plugins.copyPlugin
   ],
   resolve: {
     alias,

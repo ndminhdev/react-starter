@@ -20,7 +20,8 @@ exports.cssRules = {
       options: {
         sourceMap: true
       }
-    }
+    },
+    'postcss-loader'
   ]
 };
 
@@ -35,6 +36,7 @@ exports.sassRules = {
         sourceMap: true
       }
     },
+    'postcss-loader',
     {
       loader: 'sass-loader',
       options: {
@@ -66,15 +68,14 @@ exports.svgRules = [
       {
         loader: '@svgr/webpack',
         options: {
-          babel: false,
-          icon: true
+          babel: false
         }
       }
     ]
   },
   {
     test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-    issuer: { not: [/\.[jt]sx$/] },
-    type: 'asset/inline',
+    issuer: { not: [/\.(js|jsx)$/] },
+    type: 'asset/inline'
   }
 ]

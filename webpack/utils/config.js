@@ -23,9 +23,13 @@ const { isProd } = require('./env');
 
 exports.postcss = () => {
   const plugins = [
+    require('postcss-preset-env')({
+      browsers: 'last 2 versions',
+    }),
     'autoprefixer',
     isProd ? 'cssnano' : null
   ].filter(Boolean);
+
   return { plugins };
 };
 
