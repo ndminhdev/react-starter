@@ -37,3 +37,7 @@ node_modules
 
 # Ignore build files
 dist
+
+# Ignore lock file
+package-lock.json
+yarn.lock
