@@ -14,6 +14,10 @@ A minimal front-end template for building web application with ReactJS
 - NodeJS 15+, NPM package manager
 - Any IDE or Editor you love
 
+## Directory Structure
+
+You can organize it your way
+
 ## Getting Started
 
 Method 1:
@@ -46,7 +50,7 @@ Method 2:
 
 - ```make run``` - Run docker containers
 - ```make stop``` - Stop docker containers
-- ```make remove``` - Remove docker containers, networks and volumes
+- ```make remove``` - Remove docker containers, networks and volumes and Remove node_modules from your host machine
 - ```make mount``` - Copy node_modules from inside container to host machine (for code autocompletion, ...)
 - ```make bash``` - Make container interactive (for installing dependencies, ...)
 
