@@ -19,4 +19,4 @@ mount:
 
 # make container interactive
 bash:
-	docker container exec -it react-app /bin/sh
+	docker container exec -it $(CONTAINER_NAME) /bin/sh
