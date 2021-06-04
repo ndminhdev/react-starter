@@ -1,8 +1,22 @@
 {
   "name": "react-starter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Minimal React starter kit",
   "main": "index.js",
+  "author": "Allan Wu <wuallanx@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuallanx/react-starter.git"
+  },
+  "keywords": [
+    "React",
+    "React 17",
+    "Webpack",
+    "Babel",
+    "ESLint",
+    "Prettier"
+  ],
+  "license": "ISC",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
@@ -10,9 +24,6 @@
     "profile": "cross-env NODE_ENV=production webpack --profile --json --config webpack.config.js > ./dist/profile.json && webpack-bundle-analyzer ./dist/profile.json",
     "format": "prettier --write \"src/**/*.js\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/plugin-proposal-class-properties": "^7.13.0",

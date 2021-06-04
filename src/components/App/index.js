@@ -11,7 +11,7 @@ const App = () => {
         Create Your React App with React Starter Kit <br />
         React 17+, Webpack 5, Babel, ESLint, Prettier Full Setup
       </p>
-      <p className="sub-desc">By Dang Minh Ngo | ndminhdev@gmail.com </p>
+      <p className="sub-desc">By Allan Wu | wuallanx@gmail.com </p>
     </div>
   );
 };

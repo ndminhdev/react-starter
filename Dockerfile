@@ -1,5 +1,4 @@
 FROM node:15-alpine
-RUN mkdir -p app
 WORKDIR /usr/src/app
 
 RUN apk add --no-cache \

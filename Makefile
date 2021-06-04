@@ -1,16 +1,22 @@
-CONTAINER_NAME=flashlet-react
+# Replace react-app with your container name
+CONTAINER_NAME=react-app
 
+# start local development
 start:
 	docker-compose up
 
+# stop the containers
 stop:
 	docker-compose stop
 
+# remove the containers, volumes, networks
 remove:
 	docker-compose down
 
-mount: # copy node_modules from inside container to host machine
-	sudo docker container cp $(CONTAINER_NAME):/usr/src/app/node_modules .
+# copy node_modules from inside container to host machine
+mount:
+	sudo docker container cp $(CONTAINER_NAME):/usr/src/app/node_modules . && sudo chmod -R 777 ./node_modules
 
-bash: # make container interactive
-	docker container exec -it flashlet-react /bin/sh
+# make container interactive
+bash:
+	docker container exec -it react-app /bin/sh
