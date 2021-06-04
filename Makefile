@@ -11,7 +11,7 @@ stop:
 
 # remove the containers, volumes, networks
 remove:
-	docker-compose down
+	docker-compose down && rm -rf node_modules
 
 # copy node_modules from inside container to host machine
 mount:
