@@ -10,6 +10,8 @@ const host = '0.0.0.0';
 const port = process.env.PORT || 8080;
 
 exports.devServer = {
+  // uncomment the next line if you just want to use http
+  // https: true,
   host,
   port,
   publicPath: '/',

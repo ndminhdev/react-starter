@@ -12,8 +12,10 @@ RUN apk add --no-cache \
   make \
   nasm
 COPY . ./
-RUN npm install --silent
+RUN npm install --silent && npm cache clean --force
+RUN chown -R node node_modules
 
 EXPOSE 8080
 
+USER node
 ENTRYPOINT [ "npm", "start" ]

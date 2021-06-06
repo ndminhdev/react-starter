@@ -5,6 +5,10 @@ CONTAINER_NAME=react-app
 start:
 	docker-compose up
 
+# rebuild image and start again
+rebuild:
+	docker-compose up --build
+
 # stop the containers
 stop:
 	docker-compose stop
